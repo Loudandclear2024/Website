@@ -13,6 +13,10 @@ module.exports = {
         "light-gray": "#C2C2C2",
         "dark-gray": "#A09E9E",
       },
+      backgroundImage: {
+        "hero-img-overlay":
+          "linear-gradient(180deg, rgba(12, 16, 19, 0.63) 18.94%, rgba(12, 16, 19, 0.00) 100%);",
+      },
     },
   },
   plugins: [],
