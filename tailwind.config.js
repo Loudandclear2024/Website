@@ -16,6 +16,13 @@ module.exports = {
       backgroundImage: {
         "hero-img-overlay":
           "linear-gradient(180deg, rgba(12, 16, 19, 0.63) 18.94%, rgba(12, 16, 19, 0.00) 100%);",
+        "process-steps":
+          "linear-gradient(90deg, rgba(152, 158, 163, 0.05) 2.92%, rgba(12, 16, 19, 0.09) 93.87%);",
+        "process-circular":
+          "radial-gradient(44% 44% at 50% 50%, #20384A 0%, rgba(12, 16, 19, 0.21) 100%);",
+      },
+      zIndex: {
+        full: 999,
       },
     },
   },

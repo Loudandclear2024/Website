@@ -27,7 +27,7 @@ export default function Navbar() {
               height={50}
               width={50}
               alt="Loud & Clear"
-              className="sm:w-20 sm:h-28"
+              className=" sm:w-20 sm:h-28"
             />
           </div>
           <div>
@@ -47,7 +47,7 @@ export default function Navbar() {
         </ul>
 
         {/* Contact */}
-        <div className="hidden lg:block">
+        <div className="hidden lg:block lg:pr-5">
           <button
             className="text-xl text-white border-secondary border-[1px] rounded-xl px-3 py-2
           hover:bg-secondary hover:text-white transition duration-300 ease-in-out
@@ -75,7 +75,7 @@ export default function Navbar() {
 
       {/* Hamburger */}
       <div
-        className={`absolute w-screen sm:w-4/5 md:w-3/5 h-screen bg-white top-0 px-3 duration-300 ease-in ${
+        className={`absolute z-full w-screen sm:w-4/5 md:w-3/5 h-screen bg-white top-0 px-3 duration-300 ease-in ${
           isHamburgerOpen ? "left-0" : "-left-full"
         } lg:hidden`}
       >

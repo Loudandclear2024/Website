@@ -9,4 +9,8 @@
 
         /* @apply after:bg-secondary after:h-[1px] after:w-full after:absolute relative after:bottom-0 after:-left-full overflow-hidden after:hover:left-0 after:duration-300 after:ease-in cursor-pointer */
     }
+
+    /* .process-active{
+        @apply text-[26px] bg-process-steps
+    } */
 }
