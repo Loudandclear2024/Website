@@ -4,6 +4,9 @@ import Navbar from "@/components/Navbar"
 import Carousel from "@/components/Home/Carousel"
 import Process from "@/components/Home/Process"
 import Experience from "@/components/Home/Experience"
+import Services from "@/components/Home/Services"
+import Brands from "@/components/Home/Brands"
+import Vis_Mis from "@/components/Home/Vis_Mis"
 
 export default function Home() {
   return (
@@ -25,6 +28,33 @@ export default function Home() {
 
         <div className="bg-white px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20">
           <Experience />
+        </div>
+
+        <div className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20">
+          <Services />
+        </div>
+
+        <div className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20">
+          <Brands />
+        </div>
+
+        <div className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20">
+          <Vis_Mis />
+        </div>
+
+        <div className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20">
+          <h4 className="uppercase text-light-gray">Testimonials</h4>
+          <div>
+            <h1 className="text-secondary font-medium capitalize text-2xl">
+              What our customer says
+            </h1>
+
+            <p className="text-[#898686]">
+              We always provide best for our clients in any case, so that’s all
+              wishes can be reaslized and decenet. Lorem Ipsum dolor isit. Lorem
+              Ipsum dolor isit.
+            </p>
+          </div>
         </div>
       </div>
     </main>
