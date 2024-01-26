@@ -7,6 +7,7 @@ import Experience from "@/components/Home/Experience"
 import Services from "@/components/Home/Services"
 import Brands from "@/components/Home/Brands"
 import Vis_Mis from "@/components/Home/Vis_Mis"
+import Testimonail from "@/components/Home/Testimonial"
 
 export default function Home() {
   return (
@@ -42,18 +43,26 @@ export default function Home() {
           <Vis_Mis />
         </div>
 
-        <div className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20">
-          <h4 className="uppercase text-light-gray">Testimonials</h4>
-          <div>
-            <h1 className="text-secondary font-medium capitalize text-2xl">
-              What our customer says
-            </h1>
+        <div className=" py-16  lg:py-20 ">
+          <div className="px-6 sm:px-10 lg:pl-24 lg:pr-20">
+            <h4 className="uppercase text-light-gray md:text-xl">
+              Testimonials
+            </h4>
+            <div className="mt-4 space-y-2 md:flex md:space-y-0 md:gap-8 lg:gap-24">
+              <h1 className="text-secondary font-medium capitalize text-2xl md:grow md:text-3xl lg:text-4xl lg:grow-0">
+                What our customer says
+              </h1>
 
-            <p className="text-[#898686]">
-              We always provide best for our clients in any case, so that’s all
-              wishes can be reaslized and decenet. Lorem Ipsum dolor isit. Lorem
-              Ipsum dolor isit.
-            </p>
+              <p className="text-[#898686] md:grow-0 md:w-3/5 md:text-lg lg:w-1/2">
+                We always provide best for our clients in any case, so that's
+                all wishes can be reaslized and decenet. Lorem Ipsum dolor isit.
+                Lorem Ipsum dolor isit.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-7 lg:mt-12">
+            <Testimonail />
           </div>
         </div>
       </div>
