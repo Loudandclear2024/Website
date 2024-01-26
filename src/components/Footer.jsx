@@ -53,7 +53,7 @@ export const Footer = () => {
           {/* Company */}
           <div className="space-y-1 sm:space-y-6">
             <h3 className="text-white font-medium text-lg">Company</h3>
-            <ul className="text-light-gray flex gap-4 sm:flex-col">
+            <ul className="text-light-gray flex gap-x-4 sm:gap-4 sm:flex-col flex-wrap sm:flex-nowrap">
               <li className="cursor-pointer">About Us</li>
               <li className="cursor-pointer">Projects</li>
               <li className="cursor-pointer">News Article</li>
