@@ -50,9 +50,8 @@ export const FAQs = () => {
 
       <div className="mt-8 space-y-7 md:mt-14 md:px-8 lg:space-y-14 xl:w-4/5 xl:mx-auto">
         {faqs.map((faq, index) => (
-          <div>
+          <div key={index}>
             <div
-              key={index}
               className="flex items-center gap-4 justify-between
           relative after:absolute after:bottom-0 after:w-full after:bg-light-gray after:h-[0.5px] pb-1
           "

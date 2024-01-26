@@ -57,9 +57,9 @@ export default function Home() {
               </h1>
 
               <p className="text-[#898686] md:grow-0 md:w-3/5 md:text-lg lg:w-1/2">
-                We always provide best for our clients in any case, so that's
-                all wishes can be reaslized and decenet. Lorem Ipsum dolor isit.
-                Lorem Ipsum dolor isit.
+                We always provide best for our clients in any case, so
+                that&apos;s all wishes can be reaslized and decenet. Lorem Ipsum
+                dolor isit. Lorem Ipsum dolor isit.
               </p>
             </div>
           </div>
