@@ -8,6 +8,7 @@ import Services from "@/components/Home/Services"
 import Brands from "@/components/Home/Brands"
 import Vis_Mis from "@/components/Home/Vis_Mis"
 import Testimonail from "@/components/Home/Testimonial"
+import { FAQs } from "@/components/Home/FAQs"
 
 export default function Home() {
   return (
@@ -64,6 +65,10 @@ export default function Home() {
           <div className="mt-7 lg:mt-12">
             <Testimonail />
           </div>
+        </div>
+
+        <div className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20">
+          <FAQs />
         </div>
       </div>
     </main>
