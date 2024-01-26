@@ -9,6 +9,8 @@ import Brands from "@/components/Home/Brands"
 import Vis_Mis from "@/components/Home/Vis_Mis"
 import Testimonail from "@/components/Home/Testimonial"
 import { FAQs } from "@/components/Home/FAQs"
+import { FaArrowRightLong } from "react-icons/fa6"
+import { Footer } from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -69,6 +71,45 @@ export default function Home() {
 
         <div className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20">
           <FAQs />
+        </div>
+
+        <div className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20 xl:px-64">
+          <div className="sm:flex sm:items-center sm:justify-between">
+            <h1
+              className="text-white font-bold text-3xl sm:text-4xl sm:w-[300px] sm:leading-relaxed
+            md:text-5xl md:w-[420px] md:leading-[1.5]
+            "
+            >
+              Ready To Work With Us?
+            </h1>
+
+            <div>
+              <button
+                className="bg-secondary flex items-center text-black px-4 py-2 mt-4 sm:mt-0 rounded-xl font-medium text-base group sm:mr-4
+              border border-transparent hover:bg-transparent hover:text-secondary transition duration-300 ease-in-out hover:border-secondary lg:mr-28 lg:text-2xl"
+              >
+                Get Started
+                <FaArrowRightLong className="inline-block ml-2 text-black  group-hover:text-secondary duration-300 group-hover:ml-3" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="my-4 py-10
+        relative after:absolute after:w-full after:bottom-0 after:bg-[#898686] after:h-[1px]
+        "
+        >
+          <Footer />
+        </div>
+
+        <div
+          className=" px-4 text-center pb-10 pt-6
+        "
+        >
+          <h1 className="text-light-gray">
+            Copyright &copy; 2024. Loud and Clear. All Rights Reserved.
+          </h1>
         </div>
       </div>
     </main>
