@@ -12,6 +12,7 @@ module.exports = {
         secondary: "#BEA169", // Text color (Accent color)
         "light-gray": "#C2C2C2",
         "dark-gray": "#A09E9E",
+        "opaque-black": "rgba(0, 0, 0, 0.5)",
       },
       backgroundImage: {
         "hero-img-overlay":

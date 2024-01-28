@@ -45,7 +45,9 @@ export default function Navbar() {
           <Link href="/about">
             <li className="nav-link">About Us</li>
           </Link>
-          <li className="nav-link">Projects</li>
+          <Link href="/projects">
+            <li className="nav-link">Projects</li>
+          </Link>
           <li className="nav-link">News Articles</li>
           <li className="nav-link">Blogs</li>
         </ul>
@@ -118,7 +120,9 @@ export default function Navbar() {
             <Link href="/about">
               <li>About Us</li>
             </Link>
-            <li>Projects</li>
+            <Link href="/projects">
+              <li>Projects</li>
+            </Link>
             <li>News Articles</li>
             <li>Blogs</li>
             <li>Contact Us</li>
