@@ -1,6 +1,8 @@
 import Image from "next/image"
 import { FaInstagram } from "react-icons/fa6"
 import { FaLinkedinIn } from "react-icons/fa"
+import { MdOutlineEmail } from "react-icons/md"
+import { BsFillTelephoneFill } from "react-icons/bs"
 import Link from "next/link"
 
 export const SubFooter = () => {
@@ -25,6 +27,22 @@ export const SubFooter = () => {
             Ideas become mesmerising reality through our dedication, creating
             unique and inspiring spaces together.
           </p>
+          <div className="flex flex-col xs:flex-row">
+            <div className="mt-4 px-4">
+              <div className="flex items-center gap-3 ">
+                <MdOutlineEmail className="text-secondary text-2xl" />
+                <h3 className=" text-secondary text-lg">Email Address</h3>
+              </div>
+              <p className="text-light-gray ">xyz@gmail.Company</p>
+            </div>
+            <div className="mt-4 px-4">
+              <div className="flex items-center gap-3 ">
+                <BsFillTelephoneFill className="text-secondary text-2xl" />
+                <h3 className=" text-secondary text-lg">Mobile</h3>
+              </div>
+              <p className="text-light-gray ">+91 1010101010</p>
+            </div>
+          </div>
 
           {/* Socials */}
           <div className=" flex gap-3 mt-4 px-4">
