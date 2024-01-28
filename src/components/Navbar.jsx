@@ -39,8 +39,12 @@ export default function Navbar() {
 
         {/* nav items */}
         <ul className="hidden lg:flex lg:items-center text-white gap-7 text-xl">
-          <li className="nav-link">Home</li>
-          <li className="nav-link">About Us</li>
+          <Link href="/">
+            <li className="nav-link">Home</li>
+          </Link>
+          <Link href="/about">
+            <li className="nav-link">About Us</li>
+          </Link>
           <li className="nav-link">Projects</li>
           <li className="nav-link">News Articles</li>
           <li className="nav-link">Blogs</li>
@@ -108,8 +112,12 @@ export default function Navbar() {
         {/* Nav Items */}
         <div className="mt-2 px-4">
           <ul className="text-3xl space-y-3 font-medium">
-            <li>Home</li>
-            <li>About Us</li>
+            <Link href="/">
+              <li>Home</li>
+            </Link>
+            <Link href="/about">
+              <li>About Us</li>
+            </Link>
             <li>Projects</li>
             <li>News Articles</li>
             <li>Blogs</li>

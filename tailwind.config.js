@@ -26,6 +26,14 @@ module.exports = {
       zIndex: {
         full: 999,
       },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        mlg: "1130px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
     },
   },
   plugins: [],
