@@ -14,3 +14,7 @@
         @apply text-[26px] bg-process-steps
     } */
 }
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}

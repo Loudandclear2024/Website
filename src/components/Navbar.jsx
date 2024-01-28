@@ -14,10 +14,15 @@ const lora = Lora({
 
 // TODO: Add active class (gradient + underline) to nav items
 
-export default function Navbar() {
+export default function Navbar(props) {
+  // console.log(props)
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false)
   return (
-    <nav className="relative">
+    <nav
+      className={`
+    ${props ? props.className : "relative"}
+    `}
+    >
       <div className="py-3 px-3 flex items-center justify-between lg:pr-6">
         {/* LOGO DIV */}
         <div className="flex items-center gap-1">
