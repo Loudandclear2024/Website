@@ -10,6 +10,15 @@
         /* @apply after:bg-secondary after:h-[1px] after:w-full after:absolute relative after:bottom-0 after:-left-full overflow-hidden after:hover:left-0 after:duration-300 after:ease-in cursor-pointer */
     }
 
+    .vertical-bars{
+        @apply relative before:absolute before:h-full before:w-[2px] before:bg-light-gray before:top-0 before:left-0 
+        after:absolute after:h-full after:w-[3px] after:bg-light-gray after:top-0 after:right-0
+    }
+
+    .circles{
+        @apply relative after:absolute after:w-[18px] after:h-[18px] after:bg-light-gray after:rounded-full after:top-5  after:-right-11 sm:after:top-8 lg:after:top-12 lg:after:-right-16
+    }
+
     /* .process-active{
         @apply text-[26px] bg-process-steps
     } */

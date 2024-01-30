@@ -53,7 +53,9 @@ export default function Navbar(props) {
           <Link href="/projects">
             <li className="nav-link">Projects</li>
           </Link>
-          <li className="nav-link">News Articles</li>
+          <Link href="/news-articles">
+            <li className="nav-link">News Articles</li>
+          </Link>
           <li className="nav-link">Blogs</li>
         </ul>
 
@@ -128,7 +130,9 @@ export default function Navbar(props) {
             <Link href="/projects">
               <li>Projects</li>
             </Link>
-            <li>News Articles</li>
+            <Link href="/news-articles">
+              <li>News Articles</li>
+            </Link>
             <li>Blogs</li>
             <li>Contact Us</li>
           </ul>
