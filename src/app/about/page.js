@@ -1,5 +1,5 @@
-import { Footer } from "@/components/Footer"
-import Navbar from "@/components/Navbar"
+import { Footer } from "../../components/Footer"
+import Navbar from "../../components/Navbar"
 import Image from "next/image"
 import { FaLinkedin } from "react-icons/fa"
 

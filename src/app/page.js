@@ -1,16 +1,16 @@
 "use client"
 
-import Navbar from "@/components/Navbar"
-import Carousel from "@/components/Home/Carousel"
-import Process from "@/components/Home/Process"
-import Experience from "@/components/Home/Experience"
-import Services from "@/components/Home/Services"
-import Brands from "@/components/Home/Brands"
-import Vis_Mis from "@/components/Home/Vis_Mis"
-import Testimonail from "@/components/Home/Testimonial"
-import { FAQs } from "@/components/Home/FAQs"
+import Navbar from "../components/Navbar"
+import Carousel from "../components/Home/Carousel"
+import Process from "../components/Home/Process"
+import Experience from "../components/Home/Experience"
+import Services from "../components/Home/Services"
+import Brands from "../components/Home/Brands"
+import Vis_Mis from "../components/Home/Vis_Mis"
+import Testimonail from "../components/Home/Testimonial"
+import { FAQs } from "../components/Home/FAQs"
 import { FaArrowRightLong } from "react-icons/fa6"
-import { Footer } from "@/components/Footer"
+import { Footer } from "../components/Footer"
 
 export default function Home() {
   return (

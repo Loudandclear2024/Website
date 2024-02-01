@@ -1,5 +1,8 @@
-import Navbar from "@/components/Navbar"
-import Image from "next/image"
+"use client"
+
+import Navbar from "../../components/Navbar"
+import { Marquee } from "@/components/News-Articles/Marquee"
+import { Grid } from "@/components/News-Articles/Grid"
 
 export default function Page() {
   return (
@@ -20,86 +23,11 @@ export default function Page() {
         </div>
 
         {/* This will be marquee animation, so want everything horizontal */}
-        <div
-          className="text-5xl text-light-gray mt-14 px-4
-        vertical-bars sm:text-7xl lg:mt-16 lg:text-8xl lg:px-9
-        "
-        >
-          <div className="overflow-x-scroll overflow-y-hidden space-x-16 no-scrollbar whitespace-nowrap lg:space-x-24 py-2">
-            <span className="circles">Acoustic</span>
-            <span className="circles">Interior</span>
-            <span className="circles">Management</span>
-          </div>
-        </div>
+        <Marquee />
 
         <div className="mt-16 space-y-20 md:mt-24">
           {/* each will be grid */}
-          <div
-            className="grid grid-cols-1 md:grid-cols-2
-          lg:grid-cols-3
-          
-          "
-          >
-            <Image
-              src="/images/news-articles/1.jpg"
-              alt="article"
-              width={500}
-              height={500}
-            />
-          </div>
-          <div
-            className="grid grid-cols-1 md:grid-cols-2 md:col-span-2
-          lg:grid-cols-3
-          "
-          >
-            <Image
-              src="/images/news-articles/1.jpg"
-              alt="article"
-              width={500}
-              height={500}
-              className="md:col-start-2 lg:md:col-start-3"
-            />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            <Image
-              src="/images/news-articles/1.jpg"
-              alt="article"
-              width={500}
-              height={500}
-              className="lg:col-start-2"
-            />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            <Image
-              src="/images/news-articles/1.jpg"
-              alt="article"
-              width={500}
-              height={500}
-              className="md:col-start-2 lg:col-start-1"
-            />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            <Image
-              src="/images/news-articles/1.jpg"
-              alt="article"
-              width={500}
-              height={500}
-              className="lg:col-start-3"
-            />
-          </div>
-          <div
-            className="grid grid-cols-1 md:grid-cols-2
-          lg:grid-cols-3
-          "
-          >
-            <Image
-              src="/images/news-articles/1.jpg"
-              alt="article"
-              width={500}
-              height={500}
-              className="md:col-start-2"
-            />
-          </div>
+          <Grid />
         </div>
       </div>
     </>

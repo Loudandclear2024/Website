@@ -1,6 +1,6 @@
 "use client"
 
-import Navbar from "@/components/Navbar"
+import Navbar from "../../components/Navbar"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 import { RxCross2 } from "react-icons/rx"

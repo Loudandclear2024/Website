@@ -30,7 +30,7 @@ export default function Navbar(props) {
   return (
     <nav
       className={`
-    ${props ? props.className : "relative"}
+    ${props.className ? props.className : "relative"}
     `}
     >
       <div className="py-3 px-3 flex items-center justify-between lg:pr-6">

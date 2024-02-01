@@ -1,5 +1,5 @@
-import { Footer } from "@/components/Footer"
-import Navbar from "@/components/Navbar"
+import { Footer } from "../../components/Footer"
+import Navbar from "../../components/Navbar"
 
 export default function Page() {
   return (
@@ -14,7 +14,8 @@ export default function Page() {
           </h1>
 
           <h3 className="text-light-gray text-lg mt-5">
-            Let's Chat, Reach Out To Us <br /> We&apos;d Love To Hear From You
+            Let&apos;s Chat, Reach Out To Us <br /> We&apos;d Love To Hear From
+            You
           </h3>
 
           <form className="mt-10 space-y-10">
