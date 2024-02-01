@@ -78,7 +78,7 @@ export default function Navbar(props) {
           <Link href="/projects">
             <li
               className={` cursor-pointer
-              ${pathname === "projects" ? "active-nav-link" : "nav-link"}
+              ${pathname === "/projects" ? "active-nav-link" : "nav-link"}
             `}
             >
               Projects

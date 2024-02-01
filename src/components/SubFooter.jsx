@@ -23,23 +23,25 @@ export const SubFooter = () => {
       <div className="px-2 sm:px-7 sm:flex sm:justify-between md:px-16">
         {/* Left */}
         <div className="sm:w-3/5">
-          <div className="flex items-center">
-            <Image
-              src="/logo.png"
-              alt="logo"
-              width={100}
-              height={100}
-              className="w-14 h-18"
-            />
+          <Link href="/">
+            <div className="flex items-center">
+              <Image
+                src="/logo.png"
+                alt="logo"
+                width={100}
+                height={100}
+                className="w-14 h-18"
+              />
 
-            <h1
-              className={`text-white
+              <h1
+                className={`text-white
             ${brandBe.className}
             text-[42px]  lg:text-5xl`}
-            >
-              Loud & Clear
-            </h1>
-          </div>
+              >
+                Loud & Clear
+              </h1>
+            </div>
+          </Link>
 
           <p className="text-[#898686] px-4 md:w-4/5 lg:text-xl">
             Ideas become mesmerising reality through our dedication, creating
@@ -64,12 +66,22 @@ export const SubFooter = () => {
 
           {/* Socials */}
           <div className=" flex gap-3 mt-4 px-4">
-            <div className="bg-[#1D2123] rounded-full p-2 cursor-pointer">
-              <FaInstagram className="text-white text-3xl" />
-            </div>
-            <div className="bg-[#1D2123] rounded-full p-2 cursor-pointer">
-              <FaLinkedinIn className="text-white text-3xl" />
-            </div>
+            <a
+              href="https://www.instagram.com/loud_n_clear_india?igsh=MTA2bzB5Nmo3c2RvNg%3D%3D&utm_source=qr"
+              target="_blank"
+            >
+              <div className="bg-[#1D2123] rounded-full p-2 cursor-pointer">
+                <FaInstagram className="text-white text-3xl" />
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/loud-and-clear-ahmedabad/"
+              target="_blank"
+            >
+              <div className="bg-[#1D2123] rounded-full p-2 cursor-pointer">
+                <FaLinkedinIn className="text-white text-3xl" />
+              </div>
+            </a>
           </div>
         </div>
 
@@ -82,9 +94,15 @@ export const SubFooter = () => {
               <Link href="/">
                 <li className="cursor-pointer">Home</li>
               </Link>
-              <li className="cursor-pointer">How It Works</li>
-              <li className="cursor-pointer">Services</li>
-              <li className="cursor-pointer">FAQS</li>
+              <Link href="/#how-we-work">
+                <li className="cursor-pointer">How It Works</li>
+              </Link>
+              <Link href="/#services">
+                <li className="cursor-pointer">Services</li>
+              </Link>
+              <Link href="/#faqs">
+                <li className="cursor-pointer">FAQS</li>
+              </Link>
             </ul>
           </div>
 
@@ -95,9 +113,15 @@ export const SubFooter = () => {
               <Link href="/about">
                 <li className="cursor-pointer">About Us</li>
               </Link>
-              <li className="cursor-pointer">Projects</li>
-              <li className="cursor-pointer">News Article</li>
-              <li className="cursor-pointer">Contact Us</li>
+              <Link href="/projects">
+                <li className="cursor-pointer">Projects</li>
+              </Link>
+              <Link href="/news-articles">
+                <li className="cursor-pointer">News Article</li>
+              </Link>
+              <Link href="/contact">
+                <li className="cursor-pointer">Contact Us</li>
+              </Link>
             </ul>
           </div>
         </div>

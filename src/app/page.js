@@ -11,6 +11,7 @@ import Testimonail from "../components/Home/Testimonial"
 import { FAQs } from "../components/Home/FAQs"
 import { FaArrowRightLong } from "react-icons/fa6"
 import { Footer } from "../components/Footer"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
           <Carousel />
         </div>
 
-        <div className="mt-8 md:mt-14 pb-10 lg:pb-20">
+        <div className="mt-8 md:mt-14 pb-10 lg:pb-20" id="how-we-work">
           <Process />
         </div>
 
@@ -34,7 +35,10 @@ export default function Home() {
           <Experience />
         </div>
 
-        <div className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20">
+        <div
+          className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20"
+          id="services"
+        >
           <Services />
         </div>
 
@@ -69,7 +73,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20">
+        <div
+          className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20"
+          id="faqs"
+        >
           <FAQs />
         </div>
 
@@ -84,13 +91,15 @@ export default function Home() {
             </h1>
 
             <div>
-              <button
-                className="bg-secondary flex items-center text-black px-4 py-2 mt-4 sm:mt-0 rounded-xl font-medium text-base group sm:mr-4
+              <Link href="/contact">
+                <button
+                  className="bg-secondary flex items-center text-black px-4 py-2 mt-4 sm:mt-0 rounded-xl font-medium text-base group sm:mr-4
               border border-transparent hover:bg-transparent hover:text-secondary transition duration-300 ease-in-out hover:border-secondary lg:mr-28 lg:text-2xl"
-              >
-                Get Started
-                <FaArrowRightLong className="inline-block ml-2 text-black  group-hover:text-secondary duration-300 group-hover:ml-3" />
-              </button>
+                >
+                  Get Started
+                  <FaArrowRightLong className="inline-block ml-2 text-black  group-hover:text-secondary duration-300 group-hover:ml-3" />
+                </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@
 import Navbar from "../../components/Navbar"
 import { Marquee } from "@/components/News-Articles/Marquee"
 import { Grid } from "@/components/News-Articles/Grid"
+import { Footer } from "@/components/Footer"
 
 export default function Page() {
   return (
@@ -30,6 +31,8 @@ export default function Page() {
           <Grid />
         </div>
       </div>
+
+      <Footer />
     </>
   )
 }
