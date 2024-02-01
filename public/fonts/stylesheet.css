@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Brandbe';
+    src: url('Brandbe-Bold.eot');
+    src: local('Brandbe Bold'), local('Brandbe-Bold'),
+        url('Brandbe-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Brandbe-Bold.woff2') format('woff2'),
+        url('Brandbe-Bold.woff') format('woff'),
+        url('Brandbe-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandbe';
+    src: url('Brandbe-Light.eot');
+    src: local('Brandbe Light'), local('Brandbe-Light'),
+        url('Brandbe-Light.eot?#iefix') format('embedded-opentype'),
+        url('Brandbe-Light.woff2') format('woff2'),
+        url('Brandbe-Light.woff') format('woff'),
+        url('Brandbe-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandbe';
+    src: url('Brandbe-Regular.eot');
+    src: local('Brandbe Regular'), local('Brandbe-Regular'),
+        url('Brandbe-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Brandbe-Regular.woff2') format('woff2'),
+        url('Brandbe-Regular.woff') format('woff'),
+        url('Brandbe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

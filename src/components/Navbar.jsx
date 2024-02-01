@@ -6,10 +6,20 @@ import { Lora } from "next/font/google"
 import { BiAlignRight } from "react-icons/bi"
 import { RxCross2 } from "react-icons/rx"
 import { useState } from "react"
+import localFont from "next/font/local"
 
 const lora = Lora({
   weight: ["400", "700"],
   subsets: ["cyrillic", "latin"],
+})
+
+const brandBe = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Brandbe-Regular.woff",
+      weight: "400",
+    },
+  ],
 })
 
 // TODO: Add active class (gradient + underline) to nav items
@@ -36,7 +46,9 @@ export default function Navbar(props) {
             />
           </div>
           <div>
-            <h1 className={`${lora.className} text-white text-2xl lg:text-3xl`}>
+            <h1
+              className={` ${brandBe.className}  text-white text-4xl md:text-5xl`}
+            >
               Loud & Clear
             </h1>
           </div>
@@ -66,7 +78,7 @@ export default function Navbar(props) {
           hover:bg-secondary hover:text-white transition duration-300 ease-in-out
           "
           >
-            Contact Us
+            <Link href="/contact">Contact Us</Link>
           </button>
         </div>
 
@@ -134,7 +146,9 @@ export default function Navbar(props) {
               <li>News Articles</li>
             </Link>
             <li>Blogs</li>
-            <li>Contact Us</li>
+            <Link href="/contact">
+              <li>Contact Us</li>
+            </Link>
           </ul>
         </div>
       </div>

@@ -40,7 +40,12 @@ export default function Page() {
           
           "
           >
-            <Image src="/images/news-articles/1.jpg" width={500} height={500} />
+            <Image
+              src="/images/news-articles/1.jpg"
+              alt="article"
+              width={500}
+              height={500}
+            />
           </div>
           <div
             className="grid grid-cols-1 md:grid-cols-2 md:col-span-2
@@ -49,6 +54,7 @@ export default function Page() {
           >
             <Image
               src="/images/news-articles/1.jpg"
+              alt="article"
               width={500}
               height={500}
               className="md:col-start-2 lg:md:col-start-3"
@@ -57,6 +63,7 @@ export default function Page() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <Image
               src="/images/news-articles/1.jpg"
+              alt="article"
               width={500}
               height={500}
               className="lg:col-start-2"
@@ -65,6 +72,7 @@ export default function Page() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <Image
               src="/images/news-articles/1.jpg"
+              alt="article"
               width={500}
               height={500}
               className="md:col-start-2 lg:col-start-1"
@@ -73,6 +81,7 @@ export default function Page() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <Image
               src="/images/news-articles/1.jpg"
+              alt="article"
               width={500}
               height={500}
               className="lg:col-start-3"
@@ -85,6 +94,7 @@ export default function Page() {
           >
             <Image
               src="/images/news-articles/1.jpg"
+              alt="article"
               width={500}
               height={500}
               className="md:col-start-2"

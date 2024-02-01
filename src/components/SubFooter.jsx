@@ -4,6 +4,16 @@ import { FaLinkedinIn } from "react-icons/fa"
 import { MdOutlineEmail } from "react-icons/md"
 import { BsFillTelephoneFill } from "react-icons/bs"
 import Link from "next/link"
+import localFont from "next/font/local"
+
+const brandBe = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Brandbe-Regular.woff",
+      weight: "400",
+    },
+  ],
+})
 
 export const SubFooter = () => {
   return (
@@ -20,7 +30,13 @@ export const SubFooter = () => {
               className="w-14 h-18"
             />
 
-            <h1 className="text-white text-2xl md:text-3xl">Loud & Clear</h1>
+            <h1
+              className={`text-white
+            ${brandBe.className}
+            text-[42px]  lg:text-5xl`}
+            >
+              Loud & Clear
+            </h1>
           </div>
 
           <p className="text-[#898686] px-4 md:w-4/5 lg:text-xl">
