@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import { FaInstagram } from "react-icons/fa6"
 import { FaLinkedinIn } from "react-icons/fa"
