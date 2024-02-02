@@ -2,11 +2,80 @@
 
 import { Footer } from "../../components/Footer"
 import Navbar from "../../components/Navbar"
+import emailjs from "@emailjs/browser"
+import { useRef, useState } from "react"
+import toast, { Toaster } from "react-hot-toast"
 
 export default function Page() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    subject: "",
+    message: "",
+  })
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    })
+  }
+
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+    console.log(formData)
+    if (
+      formData.name &&
+      formData.email &&
+      formData.mobile &&
+      formData.message &&
+      formData.subject &&
+      formData.mobile.length === 10
+    ) {
+      setIsSubmitting(true)
+
+      emailjs
+        .sendForm(
+          process.env.NEXT_PUBLIC_SERVICE_ID,
+          process.env.NEXT_PUBLIC_TEMPLATE_ID,
+          form.current,
+          process.env.NEXT_PUBLIC_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            // console.log(result.text)
+            setIsSubmitting(false)
+            toast.success("Email Sent Successfully")
+            setFormData({
+              name: "",
+              email: "",
+              mobile: "",
+              subject: "",
+              message: "",
+            })
+          },
+          (error) => {
+            console.log(error.text)
+            setIsSubmitting(false)
+            toast.error("Error Sending Email")
+          }
+        )
+    } else if (formData.mobile.length !== 10) {
+      toast.error("Invalid Mobile Number")
+    } else {
+      toast.error("Please fill all the fields")
+    }
+  }
+
   return (
     <>
       <Navbar />
+      <Toaster />
 
       <div className="px-7 mt-6 sm:px-10 lg:py-12 lg:pl-24 lg:pr-20">
         {/* FORM */}
@@ -20,13 +89,17 @@ export default function Page() {
             You
           </h3>
 
-          <form className="mt-10 space-y-10">
+          <form className="mt-10 space-y-10" ref={form} onSubmit={sendEmail}>
             <div>
               <input
                 type="text"
                 className="w-full text-light-gray mt-1 focus:outline-none border-b bg-transparent rounded-none text-xl px-2
                 "
                 placeholder="Full Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
               />
             </div>
             <div>
@@ -35,6 +108,10 @@ export default function Page() {
                 className="w-full text-light-gray mt-1 focus:outline-none border-b bg-transparent rounded-none text-xl px-2
                 "
                 placeholder="Email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
               />
             </div>
             <div>
@@ -43,6 +120,22 @@ export default function Page() {
                 className="w-full text-light-gray mt-1 focus:outline-none border-b bg-transparent rounded-none text-xl px-2
                 "
                 placeholder="Mobile Number"
+                name="mobile"
+                value={formData.mobile}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                className="w-full text-light-gray mt-1 focus:outline-none border-b bg-transparent rounded-none text-xl px-2
+                "
+                placeholder="Subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                required
               />
             </div>
             <div>
@@ -51,17 +144,27 @@ export default function Page() {
                     "
                 rows={5}
                 placeholder="Message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
               ></textarea>
             </div>
 
             <div className="flex w-full lg:w-fit">
-              <button
-                className="bg-secondary text-black px-8 py-2 rounded-md text-xl mx-auto
+              <input
+                className={`bg-secondary text-black px-8 py-2 rounded-md text-xl mx-auto
                 hover:bg-opacity-80 transition duration-300 ease-in-out
-              "
-              >
-                Send
-              </button>
+                ${
+                  isSubmitting
+                    ? "cursor-not-allowed opacity-50"
+                    : "cursor-pointer"
+                }
+  `}
+                type="submit"
+                value={isSubmitting ? "Sending..." : "Send"}
+                disabled={isSubmitting}
+              />
             </div>
           </form>
         </div>
