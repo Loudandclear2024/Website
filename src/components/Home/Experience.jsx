@@ -21,13 +21,13 @@ export default function Experience() {
           </h3>
 
           <p className="text-primary font-medium text-2xl mt-4 lg:text-3xl lg:leading-normal">
-            Horem ipsum dolor sit amet, consectetur adipiscing elit. Horem ipsum
-            dolor sit amet.
+            Unleash the power of cinematic sound in the comfort of your home.
+            Elevate your audio, transform your experience.
           </p>
 
           <p className="text-[#898686] mt-3 lg:text-lg">
-            Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit
+            Immerse yourself in a symphony of sensations with our cutting-edge
+            sound technology.
           </p>
         </div>
       </div>

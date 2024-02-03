@@ -44,8 +44,9 @@ export const SubFooter = () => {
           </Link>
 
           <p className="text-[#898686] px-4 md:w-4/5 lg:text-xl">
-            Ideas become mesmerising reality through our dedication, creating
-            unique and inspiring spaces together.
+            Experience the pinnacle of audio excellence, where passion meets
+            precision. 300+ successful projects, CEDIA certified. Unmatched
+            quality, personalized solutions.
           </p>
           <div className="flex flex-col xs:flex-row">
             <div className="mt-4 px-4">

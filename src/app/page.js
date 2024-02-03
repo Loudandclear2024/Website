@@ -19,8 +19,9 @@ export default function Home() {
       <Navbar />
 
       <div className="mt-4">
-        <h1 className="pl-8 sm:pl-14 text-secondary font-bold text-2xl md:text-4xl lg:text-5xl lg:pl-24">
-          Sorem dolor <br /> ipsum sit amet
+        <h1 className="pl-8 sm:pl-14 text-secondary font-bold text-2xl md:text-4xl lg:text-5xl lg:pl-24 lg:leading-[1.175]">
+          {/* Elevate Your Audio <br /> Experience With Loud and Clear */}
+          Elevating Your Audio <br /> Experience With Loud and Clear
         </h1>
 
         <div className="mt-7 relative">
@@ -55,15 +56,16 @@ export default function Home() {
             <h4 className="uppercase text-light-gray md:text-xl">
               Testimonials
             </h4>
-            <div className="mt-4 space-y-2 md:flex md:space-y-0 md:gap-8 lg:gap-24">
+            <div className="mt-4 space-y-2 md:flex md:space-y-0 md:gap-8 lg:gap-24 mlg:gap-36 xl:gap-[20%]">
               <h1 className="text-secondary font-medium capitalize text-2xl md:grow md:text-3xl lg:text-4xl lg:grow-0">
                 What our customer says
               </h1>
 
               <p className="text-[#898686] md:grow-0 md:w-3/5 md:text-lg lg:w-1/2">
-                We always provide best for our clients in any case, so
-                that&apos;s all wishes can be reaslized and decenet. Lorem Ipsum
-                dolor isit. Lorem Ipsum dolor isit.
+                At Loud & Clear, your wishes become our mission. Customer
+                feedback fuels our creativity, ensuring every experience is a
+                masterpiece of satisfaction. Your dreams, our performance -
+                together, let&apos;s create audio excellence.
               </p>
             </div>
           </div>

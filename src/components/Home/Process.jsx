@@ -1,6 +1,7 @@
 import { IoChevronDown, IoChevronUp } from "react-icons/io5"
 import { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Process() {
   const [selected, setSelected] = useState(0)
@@ -124,14 +125,21 @@ export default function Process() {
         <div className="hidden md:block pr-3 lg:pr-8 xl:w-[50%]">
           <div className="lg:ml-8 xl:ml-16">
             <p className="text-light-gray text-lg md:mt-5 lg:w-4/5 xl:w-[70%]">
-              Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis.
+              At Loud & Clear, our team is not just about technical prowess;
+              it&apos;s a symphony of eager minds, dedicated hearts, and
+              boundless knowledge.
             </p>
 
             {/* //TODO: ADD LINK */}
-            <button className="text-white border border-secondary rounded-lg mt-4 px-4 py-[6px] text-base">
-              Learn More
-            </button>
+            <Link href="/about">
+              <button
+                className="text-white border border-secondary rounded-lg mt-4 px-4 py-[6px] text-base
+              hover:bg-secondary hover:text-black duration-300 focus:outline-none
+              "
+              >
+                Learn More
+              </button>
+            </Link>
           </div>
 
           <div className="flex justify-center pt-16 relative xl:justify-start xl:pl-24">

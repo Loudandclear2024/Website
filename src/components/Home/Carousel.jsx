@@ -63,9 +63,8 @@ export default function Carousel() {
       <div className="bg-hero-img-overlay w-full h-[90%] absolute top-0 z-10"></div>
 
       <div className="absolute top-4 pr-4 z-20 ml-8 sm:ml-14 lg:ml-24">
-        <h3 className="text-light-gray md:w-3/4 lg:w-3/5 md:text-xl">
-          Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis.
+        <h3 className="text-light-gray md:w-3/4 lg:w-3/5 md:text-2xl">
+          Our assurance of best practices in sound and home theatre solutions.
         </h3>
       </div>
 
