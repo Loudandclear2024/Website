@@ -7,14 +7,15 @@ import { RxCross2 } from "react-icons/rx"
 
 export default function Page() {
   const allImages = [
-    "1.jpg",
-    "2.JPG",
-    "3.JPG",
-    "4.jpg",
-    "1.jpg",
-    "2.JPG",
-    "3.JPG",
-    "4.jpg",
+    "1.webp",
+    "2.webp",
+    "3.webp",
+    "4.webp",
+    "5.webp",
+    "6.webp",
+    "7.webp",
+    "8.webp",
+    "9.webp",
   ]
 
   const [activeIndex, setActiveIndex] = useState(0)
@@ -62,8 +63,8 @@ export default function Page() {
           {allImages.map((image, index) => (
             <Image
               src={`/images/projects/${image}`}
-              width={300}
-              height={300}
+              width={1920}
+              height={1080}
               alt={"image"}
               className={`w-screen min-h-screen lg:h-screen object-cover transition-all duration-1000 absolute inset-0 ease-out object-bottom
               ${
@@ -107,8 +108,8 @@ export default function Page() {
           <div className="absolute z-full bg-[rgba(0,0,0,0.9)] w-screen min-h-screen">
             <Image
               src={`/images/projects/${allImages[activeIndex]}`}
-              width={300}
-              height={300}
+              width={1920}
+              height={1080}
               alt={"image"}
               className="object-contain
           top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute w-[80%] h-[80%]

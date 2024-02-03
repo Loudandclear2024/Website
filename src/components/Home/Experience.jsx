@@ -7,9 +7,9 @@ export default function Experience() {
         {/* image */}
         <div className="md:w-full lg:w-4/5 xl:w-1/2">
           <Image
-            src="/images/home/experience.jpeg"
-            width={500}
-            height={500}
+            src="/images/home/experience.webp"
+            width={1920}
+            height={1080}
             alt="experience"
             className="object-cover w-full h-[400px] md:h-[300px] lg:h-[400px] rounded-lg"
           />

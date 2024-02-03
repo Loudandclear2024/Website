@@ -8,19 +8,23 @@ import { FiArrowLeft, FiArrowRight } from "react-icons/fi"
 
 const images = [
   {
-    src: "/images/home/main_1.jpeg",
+    src: "/images/home/main_1.webp",
     alt: "main",
   },
   {
-    src: "/images/home/main_2.jpg",
+    src: "/images/home/main_2.webp",
     alt: "main",
   },
   {
-    src: "/images/home/main_3.jpg",
+    src: "/images/home/main_3.webp",
     alt: "main",
   },
   {
-    src: "/images/home/main_4.jpg",
+    src: "/images/home/main_4.webp",
+    alt: "main",
+  },
+  {
+    src: "/images/home/main_5.webp",
     alt: "main",
   },
 ]
@@ -30,14 +34,14 @@ export default function Carousel() {
   // console.log(currentImageIndex)
 
   const handlePrevClick = () => {
-    console.log("prev clicked")
+    // console.log("prev clicked")
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     )
   }
 
   const handleNextClick = () => {
-    console.log("next clicked")
+    // console.log("next clicked")
     setCurrentImageIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     )
@@ -49,9 +53,10 @@ export default function Carousel() {
       <Image
         src={images[currentImageIndex].src}
         alt="main"
-        width={600}
-        height={200}
-        className="object-cover relative w-full h-56 md:h-[60vh] object-[center_70%] lg:object-[center_75%] z-0"
+        width={1920}
+        height={1080}
+        className="object-cover relative w-screen h-56 md:h-[60vh] object-[center_70%] lg:object-[center_75%] z-0"
+        priority={true}
       />
 
       {/* Image overlay */}

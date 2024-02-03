@@ -137,7 +137,7 @@ export default function Process() {
           <div className="flex justify-center pt-16 relative xl:justify-start xl:pl-24">
             <div className="h-full w-4/5 lg:w-3/5 xl:w-1/2  rounded-full bg-process-circular -z-10 absolute top-2 left-1/2 -translate-x-1/2 xl:left-60 xl:top-1"></div>
             <Image
-              src="/images/home/process.jpeg"
+              src="/images/home/process.webp"
               width={500}
               height={500}
               alt="process"
