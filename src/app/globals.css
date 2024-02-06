@@ -21,6 +21,13 @@
         @apply relative after:absolute after:w-[18px] after:h-[18px] after:bg-light-gray after:rounded-full after:top-5  after:-right-11 sm:after:top-8 lg:after:top-12 lg:after:-right-16
     }
 
+    /* .grid-item{
+        @apply w-[200px] float-left
+    }
+    .grid-item--width2{
+        @apply w-[400px]
+    } */
+
     /* .process-active{
         @apply text-[26px] bg-process-steps
     } */

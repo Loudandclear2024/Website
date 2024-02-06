@@ -23,6 +23,8 @@ module.exports = {
           "radial-gradient(44% 44% at 50% 50%, #20384A 0%, rgba(12, 16, 19, 0.21) 100%);",
         testimonial:
           "linear-gradient(270deg, rgba(217, 217, 217, 0.00) 0%, rgba(102, 102, 102, 0.10) 100%);",
+        service:
+          "linear-gradient(0deg, rgba(12, 16, 19, 1) 20%, rgba(12, 16, 19, 0.00) 100%);",
       },
       zIndex: {
         full: 999,

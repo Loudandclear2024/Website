@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi"
 
 // TODO: add high quality images
@@ -55,8 +55,8 @@ export default function Carousel() {
         alt="main"
         width={1920}
         height={1080}
-        className="object-cover relative w-screen h-56 md:h-[60vh] object-[center_70%] lg:object-[center_75%] z-0"
-        priority={true}
+        className={`object-cover relative w-screen h-56 md:h-[60vh] object-[center_70%] lg:object-[center_75%] z-0
+        `}
       />
 
       {/* Image overlay */}
@@ -84,24 +84,5 @@ export default function Carousel() {
         </button>
       </div>
     </>
-
-    /* <div className="overflow-auto whitespace-nowrap relative">
-    <Image
-      src={"/images/home/main_1.jpeg"}
-      alt="main"
-      width={600}
-      height={200}
-      className="object-cover w-full h-56 md:h-[60vh] object-[center_70%] lg:object-[center_75%] inline"
-    />
-
-    <Image
-      src={"/images/home/main_2.jpg"}
-      alt="main"
-      width={600}
-      height={200}
-      className="object-cover w-full h-56 md:h-[60vh] object-[center_70%] lg:object-[center_75%] inline"
-    />
-  </div> 
-  */
   )
 }
