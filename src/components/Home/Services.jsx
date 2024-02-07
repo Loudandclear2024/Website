@@ -151,7 +151,7 @@ export default function Services() {
               </div>
               <div className="relative after:absolute after:bg-service after:w-full after:h-full after:opacity-50 after:top-0 after:left-0 after:z-10">
                 <Image
-                  src="/images/home/services/10.webp"
+                  src="/images/home/services/11.webp"
                   alt="Picture of the author"
                   width={1920}
                   height={1080}

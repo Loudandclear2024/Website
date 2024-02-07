@@ -8,24 +8,34 @@ export default function Process() {
 
   const process = [
     {
-      heading: "Consulation",
+      heading: "Initial Consulation",
       subText:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nisi. Lorem ipsum dolor sit amet.",
+        "Initial meeting with client and architect, to explain latest technologies and types of systems.",
     },
     {
-      heading: "Design",
+      heading: "Conceptual Design",
       subText:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nisi. Lorem ipsum dolor sit amet.",
+        "Guiding them on which systems enhances their lifestyle and discussing design ideas with architects.",
     },
     {
-      heading: "Execution",
+      heading: "Technical Planning",
       subText:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nisi. Lorem ipsum dolor sit amet.",
+        "Choose audio-visual equipment, seating, lighting, and acoustic elements based on the finalized design.Preparing technical CAD drawings such as (placement, wiring & acoustics) for the suggested AV system.",
     },
     {
-      heading: "Approval & Handover",
+      heading: "Contractors and Installation",
       subText:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nisi. Lorem ipsum dolor sit amet.",
+        "Releasing final execution drawings and supervising the same to onsite. Professional AV system installation.",
+    },
+    {
+      heading: "Testing and Calibration",
+      subText:
+        "Final programming of the system. Calibrate and test all audio-visual components to ensure optimal performance.",
+    },
+    {
+      heading: "Documentation and Handover",
+      subText:
+        "Provide the client with comprehensive documentation, including manuals, warranty information, and system guidelines. Officially hand over the completed home theater to the client, ensuring their satisfaction.",
     },
   ]
 
@@ -130,7 +140,6 @@ export default function Process() {
               boundless knowledge.
             </p>
 
-            {/* //TODO: ADD LINK */}
             <Link href="/about">
               <button
                 className="text-white border border-secondary rounded-lg mt-4 px-4 py-[6px] text-base
@@ -149,7 +158,7 @@ export default function Process() {
               width={500}
               height={500}
               alt="process"
-              className="w-[300px] h-[300px] object-cover rounded-lg object-[50%_70%]"
+              className="w-[300px] h-[300px] object-cover rounded-lg object-[50%_70%] mlg:h-[400px] mlg:w-[400px]"
             />
           </div>
         </div>
