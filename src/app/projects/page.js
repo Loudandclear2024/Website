@@ -112,7 +112,7 @@ export default function Page() {
               height={1080}
               alt={"image"}
               className="object-contain
-          top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute w-[80%] h-[80%]
+          top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 absolute w-[90%] h-[90%]
           "
             />
             <button
