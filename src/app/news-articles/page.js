@@ -4,8 +4,30 @@ import Navbar from "../../components/Navbar"
 import { Marquee } from "@/components/News-Articles/Marquee"
 import { Grid } from "@/components/News-Articles/Grid"
 import { Footer } from "@/components/Footer"
+import { useEffect, useState } from "react"
 
 export default function Page() {
+  const [modalIsOpen, setIsOpen] = useState(false)
+  const [modalContent, setModalContent] = useState("")
+
+  function openModal(img) {
+    setIsOpen(true)
+    setModalContent(img)
+  }
+  function closeModal() {
+    setIsOpen(false)
+    setModalContent("")
+  }
+
+  // useEffect(() => {
+  //   // If the modal is open, disable scrolling of whole html
+  //   if (modalIsOpen) {
+  //     document.documentElement.style.overflow = "hidden"
+  //   } else {
+  //     document.documentElement.style.overflow = "scroll"
+  //   }
+  // }, [modalIsOpen])
+
   return (
     <>
       <Navbar />
@@ -28,7 +50,13 @@ export default function Page() {
 
         <div className="mt-16 space-y-20 md:mt-24">
           {/* each will be grid */}
-          <Grid />
+          <Grid
+            modalIsOpen={modalIsOpen}
+            setModalIsOpen={setIsOpen}
+            openModal={openModal}
+            closeModal={closeModal}
+            modalContent={modalContent}
+          />
         </div>
       </div>
 
