@@ -11,11 +11,11 @@ export default function Vis_Mis() {
             Transforming Audio Visual Experiences
           </h1>
           <p className="text-light-gray text-lg lg:text-xl">
-            At Loud & Clear, we're committed to raising the bar in audio-visual
-            design and calibration standards. We envision a future where every
-            AV room is meticulously crafted to deliver unparalleled sound and
-            visual experiences. By setting new benchmarks for quality and
-            precision, we aim to transform how audio-visual systems are
+            At Loud & Clear, we&apos;re committed to raising the bar in
+            audio-visual design and calibration standards. We envision a future
+            where every AV room is meticulously crafted to deliver unparalleled
+            sound and visual experiences. By setting new benchmarks for quality
+            and precision, we aim to transform how audio-visual systems are
             perceived and enjoyed. With our expertise and dedication, we strive
             to create immersive environments that captivate the senses and
             exceed expectations. Join us as we lead the charge towards a world
