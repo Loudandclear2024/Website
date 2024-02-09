@@ -80,11 +80,14 @@ export default function Page() {
       <div className="px-7 mt-6 sm:px-10 lg:py-12 lg:pl-24 lg:pr-20">
         {/* FORM */}
         <div>
-          <h1 className="text-secondary text-3xl font-bold">
-            CONTACT <span className="text-light-gray text-2xl ml-1">US</span>
+          <h1 className="text-secondary text-3xl font-bold sm:text-4xl lg:text-5xl">
+            CONTACT{" "}
+            <span className="text-light-gray text-2xl ml-1 lg:text-3xl">
+              US
+            </span>
           </h1>
 
-          <h3 className="text-light-gray text-lg mt-5">
+          <h3 className="text-light-gray text-lg mt-5 sm:text-xl">
             Let&apos;s Chat, Reach Out To Us <br /> We&apos;d Love To Hear From
             You
           </h3>
@@ -154,7 +157,7 @@ export default function Page() {
             <div className="flex w-full lg:w-fit">
               <input
                 className={`bg-secondary text-black px-8 py-2 rounded-md text-xl mx-auto
-                hover:bg-opacity-80 transition duration-300 ease-in-out
+                hover:bg-opacity-80 transition duration-300 ease-in-out sm:mx-0
                 ${
                   isSubmitting
                     ? "cursor-not-allowed opacity-50"

@@ -55,7 +55,7 @@ export default function About() {
 
         <div className="mt-7 md:flex md:gap-3 items-center lg:justify-between">
           <h1 className="text-light-gray font-medium text-3xl md:text-5xl md:leading-tight lg:w-[45%] mlg:text-6xl mlg:leading-snug xl:text-7xl xl:leading-normal xl:w-[47%]">
-            Our Dream is Global Learning Transformation
+            Roaring Beginnings of Loud & Clear
           </h1>
 
           <Image

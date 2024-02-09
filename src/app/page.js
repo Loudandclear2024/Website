@@ -12,8 +12,42 @@ import { FAQs } from "../components/Home/FAQs"
 import { FaArrowRightLong } from "react-icons/fa6"
 import { Footer } from "../components/Footer"
 import Link from "next/link"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/all"
+import { useEffect, useRef } from "react"
+
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Home() {
+  const changeBg = useRef(null)
+  const visMisEle = useRef(null)
+
+  useEffect(() => {
+    gsap.to(changeBg.current, {
+      scrollTrigger: {
+        trigger: changeBg.current,
+        start: "top 30%",
+        toggleActions: "play none none reverse",
+        // markers: true,
+      },
+      backgroundColor: "#0C1013",
+      duration: 0.9,
+      // delay: 0.1,
+    })
+
+    // gsap.to(visMisEle.current, {
+    //   scrollTrigger: {
+    //     trigger: visMisEle.current,
+    //     start: "top 70%",
+    //     toggleActions: "play none none reverse",
+    //     // markers: true,
+    //   },
+    //   backgroundColor: "white",
+    //   duration: 0.9,
+    //   // delay: 0.1,
+    // })
+  }, [])
+
   return (
     <main>
       <Navbar />
@@ -37,8 +71,9 @@ export default function Home() {
         </div>
 
         <div
-          className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20"
+          className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20 bg-white"
           id="services"
+          ref={changeBg}
         >
           <Services />
         </div>
@@ -47,7 +82,10 @@ export default function Home() {
           <Brands />
         </div>
 
-        <div className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20">
+        <div
+          className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20"
+          ref={visMisEle}
+        >
           <Vis_Mis />
         </div>
 

@@ -43,18 +43,27 @@ export const SubFooter = () => {
             </div>
           </Link>
 
-          <p className="text-[#898686] px-4 md:w-4/5 lg:text-xl">
+          {/* <p className="text-[#898686] px-4 md:w-4/5 lg:text-xl">
             Experience the pinnacle of audio excellence, where passion meets
             precision. 300+ successful projects, CEDIA certified. Unmatched
             quality, personalized solutions.
-          </p>
-          <div className="flex flex-col xs:flex-row">
+          </p> */}
+
+          <div className="mt-2 px-4">
+            <p className="text-light-gray">
+              304 Sun Orbit, B/H Rajpath Club <br />
+              Next to PDPU Hall, Rajpath Rangoli Rd <br />
+              Ahmedabad - 380059.
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row">
             <div className="mt-4 px-4">
               <div className="flex items-center gap-3 ">
                 <MdOutlineEmail className="text-secondary text-2xl" />
                 <h3 className=" text-secondary text-lg">Email Address</h3>
               </div>
-              <p className="text-light-gray ">xyz@gmail.Company</p>
+              <p className="text-light-gray ">info.loudandclear@gmail.com</p>
             </div>
             <div className="mt-4 px-4">
               <div className="flex items-center gap-3 ">

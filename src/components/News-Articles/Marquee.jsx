@@ -41,10 +41,24 @@ export const Marquee = () => {
         "
       >
         <div className="inline-block space-x-16 lg:space-x-24">
-          <span className="circles">Acoustic</span>
+          <span className="circles">Acoustics</span>
+          <span className="circles">Audio & Visuals</span>
           <span className="circles">Interior</span>
           <span className="circles">Management</span>
-          <span className="circles">Acoustic</span>
+          <span className="circles">Acoustics</span>
+          <span className="circles">Audio & Visuals</span>
+          <span className="circles">Interior</span>
+          <span className="circles">Management</span>
+          <span className="circles">Acoustics</span>
+          <span className="circles">Audio & Visuals</span>
+          <span className="circles">Interior</span>
+          <span className="circles">Management</span>
+          <span className="circles">Acoustics</span>
+          <span className="circles">Audio & Visuals</span>
+          <span className="circles">Interior</span>
+          <span className="circles">Management</span>
+          <span className="circles">Acoustics</span>
+          <span className="circles">Audio & Visuals</span>
           <span className="circles">Interior</span>
           <span className="circles">Management</span>
         </div>

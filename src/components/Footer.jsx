@@ -3,6 +3,8 @@
 import { SubFooter } from "./SubFooter"
 
 export const Footer = () => {
+  const year = new Date().getFullYear()
+
   return (
     <>
       <div
@@ -18,7 +20,7 @@ export const Footer = () => {
         "
       >
         <h1 className="text-light-gray">
-          Copyright &copy; 2024. Loud and Clear. All Rights Reserved.
+          Copyright &copy; {year}. Loud and Clear. All Rights Reserved.
         </h1>
       </div>
     </>

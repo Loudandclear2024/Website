@@ -1,18 +1,37 @@
 "use client"
 
 import Image from "next/image"
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/all"
+
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Services() {
+  const textEle = useRef(null)
+
+  useEffect(() => {
+    gsap.to(textEle.current, {
+      scrollTrigger: {
+        trigger: textEle.current,
+        start: "top 30%",
+        toggleActions: "play none none reverse",
+        // markers: true,
+      },
+      color: "#C2C2C2",
+      duration: 0.5,
+    })
+  }, [])
+
   return (
     <>
       <div>
-        {/* Gradient */}
-        <div></div>
         <div className="text-center space-y-3 lg:space-y-4">
-          <h3 className="text-light-gray font-medium text-lg md:text-xl lg:text-2xl">
-            {" "}
+          <h3
+            className="text-black font-medium text-lg md:text-xl lg:text-2xl"
+            ref={textEle}
+          >
             Our Services
           </h3>
           <h1 className="text-secondary font-semibold text-2xl xs:text-3xl md:text-4xl lg:text-5xl">
