@@ -18,7 +18,7 @@ export const Marquee = () => {
     gsap.to(marqueeContainer, {
       scrollLeft: marqueeContainer.scrollWidth,
       ease: "linear",
-      duration: 80,
+      duration: 300,
       repeat: -1,
       repeatDelay: 0,
     })
