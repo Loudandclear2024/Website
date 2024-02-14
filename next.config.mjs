@@ -1,4 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  async rewrites() {
+    ;[
+      {
+        source: "/blog",
+        destination: "https://starter-kit-sable-eta.vercel.app/blog",
+      },
+      {
+        source: "/blog/:slug",
+        destination: "https://starter-kit-sable-eta.vercel.app/blog/:slug",
+      },
+    ]
+  },
+}
 
-export default nextConfig;
+export default nextConfig
