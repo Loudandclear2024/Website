@@ -228,7 +228,7 @@ export default function Navbar(props) {
               </Link>
             </div>
             <div>
-              <Link href="/blogs">
+              <Link href="/blog">
                 <li>Blogs</li>
               </Link>
             </div>
