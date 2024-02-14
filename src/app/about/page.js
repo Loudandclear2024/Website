@@ -18,31 +18,31 @@ export default function About() {
       name: "Sanjay Aagri",
       position: "Manager",
       image: "/images/about/team/sanjay.jpeg",
-      linkedin: "https://www.linkedin.com/in/john-doe",
+      linkedin: "#",
     },
     {
       name: "Dhrupad Anam",
       position: "Sr. Project Manager",
       image: "/images/about/team/dhrupad.jpeg",
-      linkedin: "https://www.linkedin.com/in/maria-sanchaz",
+      linkedin: "https://www.linkedin.com/in/dhrupad-anam-b269122b0/",
     },
     {
       name: "Ankit Kumar",
       position: "Site Engineer",
       image: "/images/about/team/ankit.jpeg",
-      linkedin: "https://www.linkedin.com/in/maria-sanchaz",
+      linkedin: "https://www.linkedin.com/in/ankit-kumar-5427392b0/",
     },
     {
       name: "Ganesh Parmar",
       position: "AutoCAD Draftman",
       image: "/images/about/team/ganesh.jpeg",
-      linkedin: "https://www.linkedin.com/in/john-doe",
+      linkedin: "https://www.linkedin.com/in/ganesh-parmar-26673a2b0/",
     },
     {
       name: "Deepak Goswami",
-      position: "Office Boy",
+      position: "Office Assistant",
       image: "/images/about/team/deepak.jpeg",
-      linkedin: "https://www.linkedin.com/in/john-doe",
+      linkedin: "https://www.linkedin.com/in/deepak-goswami-7907342b0/",
     },
   ]
 

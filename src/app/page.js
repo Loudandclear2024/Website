@@ -89,7 +89,8 @@ export default function Home() {
           <Vis_Mis />
         </div>
 
-        <div className=" py-16  lg:py-20 ">
+        {/* Testimonials and FAQs on hold */}
+        {/* <div className=" py-16  lg:py-20 ">
           <div className="px-6 sm:px-10 lg:pl-24 lg:pr-20">
             <h4 className="uppercase text-light-gray md:text-xl">
               Testimonials
@@ -107,18 +108,17 @@ export default function Home() {
               </p>
             </div>
           </div>
-
           <div className="mt-7 lg:mt-12">
             <Testimonail />
           </div>
-        </div>
+        </div> */}
 
-        <div
+        {/* <div
           className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20"
           id="faqs"
         >
           <FAQs />
-        </div>
+        </div> */}
 
         <div className="px-6 py-16 sm:px-10 lg:py-20 lg:pl-24 lg:pr-20 xl:px-64">
           <div className="sm:flex sm:items-center sm:justify-between">
