@@ -93,7 +93,10 @@ export default function Navbar(props) {
               News Articles
             </li>
           </Link>
-          <li className="nav-link">Blogs</li>
+
+          <Link href={"/blog"}>
+            <li className="nav-link">Blogs</li>
+          </Link>
         </ul>
 
         {/* Contact */}
