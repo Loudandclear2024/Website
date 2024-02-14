@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async rewrites() {
-    ;[
+    return [
       {
         source: "/blog",
         destination: "https://starter-kit-sable-eta.vercel.app/blog",
