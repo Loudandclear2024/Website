@@ -4,12 +4,12 @@ const nextConfig = {
     return [
       {
         source: "/blog",
-        destination: "https://starter-n6w3bev6x-preet-sojitra.vercel.app/",
+        destination: "https://starter-kit-rho-five.vercel.app/",
         permanent: false,
       },
       {
         source: "/blog/:slug",
-        destination: "https://starter-n6w3bev6x-preet-sojitra.vercel.app/:slug",
+        destination: "https://starter-kit-rho-five.vercel.app/:slug",
         permanent: false,
       },
     ]
