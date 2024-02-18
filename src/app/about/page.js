@@ -119,7 +119,7 @@ export default function About() {
           <h3 className="text-secondary text-xl lg:text-2xl">Meet The Team</h3>
 
           <h1 className="text-light-gray font-medium text-3xl mt-5 lg:text-5xl lg:leading-tight lg:w-4/5 mlg:w-3/4 2xl:w-1/2 lg:mt-10">
-            Meet Our Dedicated Team of Lorem and Ipsum
+            Meet Our Dedicated Team Behind Loud & Clear
           </h1>
 
           {/* All Images */}
