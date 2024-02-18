@@ -4,12 +4,12 @@ const nextConfig = {
     return [
       {
         source: "/blog",
-        destination: "https://starter-kit-rho-five.vercel.app/",
+        destination: "https://blogs.loudandclear.in/",
         permanent: false,
       },
       {
         source: "/blog/:slug",
-        destination: "https://starter-kit-rho-five.vercel.app/:slug",
+        destination: "https://blogs.loudandclear.in/",
         permanent: false,
       },
     ]

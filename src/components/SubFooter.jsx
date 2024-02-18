@@ -70,7 +70,7 @@ export const SubFooter = () => {
                 <BsFillTelephoneFill className="text-secondary text-2xl" />
                 <h3 className=" text-secondary text-lg">Mobile</h3>
               </div>
-              <p className="text-light-gray ">+91 1010101010</p>
+              <p className="text-light-gray ">+91 9979711555</p>
             </div>
           </div>
 
