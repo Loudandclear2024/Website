@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 import { RxCross2 } from "react-icons/rx"
+import Head from "next/head"
 
 export default function Page() {
   const allImages = [
@@ -57,6 +58,27 @@ export default function Page() {
 
   return (
     <>
+      <Head>
+        <title>Loud and Clear | Projects</title>
+        <meta name="description" content="Loud and Clear Projects" />
+        <meta
+          name="keywords"
+          content="audio, video, AV, solutions, home theater, corporate, Loud & Clear"
+        />
+        <meta name="author" content="Loud and Clear" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="generator" content="Next.js" />
+        <meta name="og:title" content="Loud and Clear" />
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content="https://www.loudandclear.in" />
+        <meta
+          name="og:description"
+          content="Premier AV solutions provider delivering crystal-clear sound & stunning visuals for tailored entertainment experiences. Expert consultations for seamless integration into any space. From home theaters to corporate environments, experience audio-video excellence with Loud and Clear."
+        />
+        <meta name="og:image" content="https://www.loudandclear.in/logo.png" />
+      </Head>
+
       <div className="relative w-screen min-h-screen after:absolute after:w-full after:min-h-screen after:inset-0 after:bg-opaque-black overflow-x-hidden">
         <Navbar className="absolute z-full w-full" />
         <div className="relative">
@@ -87,9 +109,9 @@ export default function Page() {
         "
           onClick={imageClick}
         >
-          <h1 className="text-5xl sm:text-6xl text-white font-bold">
+          {/* <h1 className="text-5xl sm:text-6xl text-white font-bold">
             Lorem Ipsum
-          </h1>
+          </h1> */}
 
           <button
             onClick={(e) => {

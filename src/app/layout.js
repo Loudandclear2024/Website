@@ -12,8 +12,19 @@ export const metadata = {
     "Premier AV solutions provider delivering crystal-clear sound & stunning visuals for tailored entertainment experiences. Expert consultations for seamless integration into any space. From home theaters to corporate environments, experience audio-video excellence with Loud & Clear.",
   keywords:
     "audio, video, AV, solutions, home theater, corporate, Loud & Clear",
-  image: "/logo.png",
-  // url: "https://loudandclear.com",
+  image: "https://www.loudandclear.in/logo.png",
+  author: "Loud and Clear",
+  robots: "index, follow",
+  language: "English",
+  generator: "Next.js",
+  copyright:
+    "© 2021 Loud and Clear. All rights reserved. Designed and developed by Loud and Clear.",
+  ogTitle: "Loud and Clear",
+  ogType: "website",
+  ogUrl: "https://www.loudandclear.in",
+  ogDescription:
+    "Premier AV solutions provider delivering crystal-clear sound & stunning visuals for tailored entertainment experiences. Expert consultations for seamless integration into any space. From home theaters to corporate environments, experience audio-video excellence with Loud and Clear.",
+  ogImage: "https://www.loudandclear.in/logo.png",
 }
 
 export default function RootLayout({ children }) {

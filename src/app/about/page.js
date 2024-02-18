@@ -5,6 +5,7 @@ import { Footer } from "../../components/Footer"
 import Navbar from "../../components/Navbar"
 import Image from "next/image"
 import { FaLinkedin } from "react-icons/fa"
+import Head from "next/head"
 
 export default function About() {
   const team = [
@@ -48,6 +49,37 @@ export default function About() {
 
   return (
     <>
+      <Head>
+        <Head>
+          <title>Loud and Clear | About Us</title>
+          <meta
+            name="description"
+            content="
+        Loud & Clear is your premier destination for premium audio-video solutions. As a leading end to end AV solution provider, we specialize in delivering top-of-the-line AV systems. From home theaters to corporate environments, we offer a comprehensive range of products and services to meet your every AV requirement. Experience excellence in audio-video with Loud & Clear."
+          />
+          <meta
+            name="keywords"
+            content="audio, video, AV, solutions, home theater, corporate, Loud & Clear"
+          />
+
+          <meta name="author" content="Loud and Clear" />
+
+          <meta name="robots" content="index, follow" />
+          <meta name="language" content="English" />
+          <meta name="generator" content="Next.js" />
+          <meta name="og:title" content="Loud and Clear" />
+          <meta name="og:type" content="website" />
+          <meta name="og:url" content="https://www.loudandclear.in" />
+          <meta
+            name="og:description"
+            content="Premier AV solutions provider delivering crystal-clear sound & stunning visuals for tailored entertainment experiences. Expert consultations for seamless integration into any space. From home theaters to corporate environments, experience audio-video excellence with Loud and Clear."
+          />
+          <meta
+            name="og:image"
+            content="https://www.loudandclear.in/logo.png"
+          />
+        </Head>
+      </Head>
       <Navbar />
 
       <div className="px-7 mt-6 sm:px-10 lg:py-12 lg:pl-24 lg:pr-20">

@@ -4,7 +4,8 @@ import Navbar from "../../components/Navbar"
 import { Marquee } from "@/components/News-Articles/Marquee"
 import { Grid } from "@/components/News-Articles/Grid"
 import { Footer } from "@/components/Footer"
-import { useEffect, useState } from "react"
+import { useState } from "react"
+import Head from "next/head"
 
 export default function Page() {
   const [modalIsOpen, setIsOpen] = useState(false)
@@ -30,6 +31,31 @@ export default function Page() {
 
   return (
     <>
+      <Head>
+        <title>Loud and Clear | News and Articles</title>
+        <meta
+          name="description"
+          content="
+        Explore Our Latest News and Articles: Uncover the Stories That Define Us and Our Work
+        "
+        />
+        <meta
+          name="keywords"
+          content="audio, video, acoustics, AV, solutions, home theater, corporate, Loud & Clear"
+        />
+        <meta name="author" content="Loud and Clear" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="generator" content="Next.js" />
+        <meta name="og:title" content="Loud and Clear" />
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content="https://www.loudandclear.in" />
+        <meta
+          name="og:description"
+          content="Premier AV solutions provider delivering crystal-clear sound & stunning visuals for tailored entertainment experiences. Expert consultations for seamless integration into any space. From home theaters to corporate environments, experience audio-video excellence with Loud and Clear."
+        />
+        <meta name="og:image" content="https://www.loudandclear.in/logo.png" />
+      </Head>
       <Navbar />
       <div className="px-7 mt-8 sm:px-10 lg:py-12 lg:pl-24 lg:pr-20 lg:mt-0">
         <div>

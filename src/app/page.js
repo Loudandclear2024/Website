@@ -7,8 +7,8 @@ import Experience from "../components/Home/Experience"
 import Services from "../components/Home/Services"
 import Brands from "../components/Home/Brands"
 import Vis_Mis from "../components/Home/Vis_Mis"
-import Testimonail from "../components/Home/Testimonial"
-import { FAQs } from "../components/Home/FAQs"
+// import Testimonail from "../components/Home/Testimonial"
+// import { FAQs } from "../components/Home/FAQs"
 import { FaArrowRightLong } from "react-icons/fa6"
 import { Footer } from "../components/Footer"
 import Link from "next/link"
@@ -19,6 +19,14 @@ import { useEffect, useRef } from "react"
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Home() {
+  // Developer info
+  console.log(
+    "Developed by: Preet Sojitra\n" +
+      "Wesite: https://preet-sojitra-github-io.vercel.app/\n" +
+      "GitHub: https://github.com/Preet-Sojitra\n" +
+      "Contact for any kind of development work\n"
+  )
+
   const changeBg = useRef(null)
   const visMisEle = useRef(null)
 

@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar"
 import emailjs from "@emailjs/browser"
 import { useRef, useState } from "react"
 import toast, { Toaster } from "react-hot-toast"
+import Head from "next/head"
 
 export default function Page() {
   const [formData, setFormData] = useState({
@@ -74,6 +75,31 @@ export default function Page() {
 
   return (
     <>
+      <Head>
+        <title>Loud and Clear | Contact Us</title>
+        <meta
+          name="description"
+          content="Contact Loud and Clear for all your audio-video solutions"
+        />
+        <meta
+          name="keywords"
+          content="audio, video, AV, solutions, home theater, corporate, Loud & Clear"
+        />
+
+        <meta name="author" content="Loud and Clear" />
+
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="generator" content="Next.js" />
+        <meta name="og:title" content="Loud and Clear" />
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content="https://www.loudandclear.in" />
+        <meta
+          name="og:description"
+          content="Premier AV solutions provider delivering crystal-clear sound & stunning visuals for tailored entertainment experiences. Expert consultations for seamless integration into any space. From home theaters to corporate environments, experience audio-video excellence with Loud and Clear."
+        />
+        <meta name="og:image" content="https://www.loudandclear.in/logo.png" />
+      </Head>
       <Navbar />
       <Toaster />
 
