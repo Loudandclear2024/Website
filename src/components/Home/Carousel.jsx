@@ -64,7 +64,7 @@ export default function Carousel() {
 
       <div className="absolute top-4 pr-4 z-20 ml-8 sm:ml-14 lg:ml-24">
         <h3 className="text-light-gray md:w-3/4 lg:w-3/5 md:text-2xl">
-          Our assurance of best practices in sound and home theatre solutions.
+          Our assurance of best practices in Audio and Video solutions.
         </h3>
       </div>
 

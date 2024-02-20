@@ -63,7 +63,7 @@ export default function Home() {
       <div className="mt-4">
         <h1 className="pl-8 sm:pl-14 text-secondary font-bold text-2xl md:text-4xl lg:text-5xl lg:pl-24 lg:leading-[1.175]">
           {/* Elevate Your Audio <br /> Experience With Loud and Clear */}
-          Elevating Your Audio <br /> Experience With Loud and Clear
+          Elevate Your Cinematic <br /> Experience With Loud and Clear
         </h1>
 
         <div className="mt-7 relative">

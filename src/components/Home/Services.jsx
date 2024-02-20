@@ -35,7 +35,7 @@ export default function Services() {
             Our Services
           </h3>
           <h1 className="text-secondary font-semibold text-2xl xs:text-3xl md:text-4xl lg:text-5xl">
-            Here Are Our Best Services
+            Here Are Our Services
           </h1>
         </div>
 
@@ -102,7 +102,7 @@ export default function Services() {
                   className="rounded-md"
                 />
                 <h3 className="text-white font-medium absolute bottom-1 z-20 text-lg left-3 lg:text-xl">
-                  Project Selection & Supply
+                  Project Selection and Supply
                 </h3>
               </div>
 

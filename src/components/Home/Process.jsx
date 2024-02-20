@@ -8,7 +8,7 @@ export default function Process() {
 
   const process = [
     {
-      heading: "Initial Consulation",
+      heading: "Initial Consultation",
       subText:
         "Initial meeting with client and architect, to explain latest technologies and types of systems.",
     },
@@ -35,7 +35,7 @@ export default function Process() {
     {
       heading: "Documentation and Handover",
       subText:
-        "Provide the client with comprehensive documentation, including manuals, warranty information, and system guidelines. Officially hand over the completed home theater to the client, ensuring their satisfaction.",
+        "Provide the client with comprehensive documentation, including manuals, warranty information, and system guidelines. Officially hand over the completed home theater and demonstrate how to use the system to the client, ensuring their satisfaction.",
     },
   ]
 
@@ -58,7 +58,7 @@ export default function Process() {
         {/* Left */}
         <div className="xl:w-1/2">
           <h3 className="uppercase text-light-gray ml-8 sm:ml-14 md:text-xl lg:ml-24">
-            How it work
+            How we work
           </h3>
 
           <h1 className="text-secondary font-semibold text-[27px] mt-2 ml-8 sm:ml-14 md:text-3xl md:mt-4 lg:w-1/2 lg:text-3xl lg:ml-24">

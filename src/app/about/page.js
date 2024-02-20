@@ -12,37 +12,43 @@ export default function About() {
     {
       name: "Karan Gandhi",
       position: "Founder",
-      image: "/images/about/team/karan.jpeg",
+      image: "/images/about/team/karan.webp",
       linkedin: "https://www.linkedin.com/in/karan-gandhi-3370201b/",
     },
     {
       name: "Sanjay Aagri",
       position: "Manager",
-      image: "/images/about/team/sanjay.jpeg",
+      image: "/images/about/team/sanjay.webp",
       linkedin: "#",
     },
     {
       name: "Dhrupad Anam",
       position: "Sr. Project Manager",
-      image: "/images/about/team/dhrupad.jpeg",
+      image: "/images/about/team/dhrupad.webp",
       linkedin: "https://www.linkedin.com/in/dhrupad-anam-b269122b0/",
+    },
+    {
+      name: "Rajendra Patel",
+      position: "Accountant",
+      image: "/images/about/team/rajendra.webp",
+      linkedin: "#",
     },
     {
       name: "Ankit Kumar",
       position: "Site Engineer",
-      image: "/images/about/team/ankit.jpeg",
+      image: "/images/about/team/ankit.webp",
       linkedin: "https://www.linkedin.com/in/ankit-kumar-5427392b0/",
     },
     {
       name: "Ganesh Parmar",
       position: "AutoCAD Draftman",
-      image: "/images/about/team/ganesh.jpeg",
+      image: "/images/about/team/ganesh.webp",
       linkedin: "https://www.linkedin.com/in/ganesh-parmar-26673a2b0/",
     },
     {
       name: "Deepak Goswami",
       position: "Office Assistant",
-      image: "/images/about/team/deepak.jpeg",
+      image: "/images/about/team/deepak.webp",
       linkedin: "https://www.linkedin.com/in/deepak-goswami-7907342b0/",
     },
   ]
@@ -125,7 +131,15 @@ export default function About() {
           {/* All Images */}
           <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:mt-5 lg:mt-8 lg:grid-cols-3">
             {team.map((member, index) => (
-              <div className="relative group" key={index}>
+              <div
+                className={`relative group
+              ${
+                index === 6 &&
+                "lg:col-start-2 sm:col-span-2 sm:justify-self-center lg:col-span-1 lg:justify-self-auto"
+              }
+              `}
+                key={index}
+              >
                 <Image
                   src={member.image}
                   width={500}

@@ -18,7 +18,7 @@ export const Marquee = () => {
     gsap.to(marqueeContainer, {
       scrollLeft: marqueeContainer.scrollWidth,
       ease: "linear",
-      duration: 300,
+      duration: 500,
       repeat: -1,
       repeatDelay: 0,
     })
@@ -41,6 +41,18 @@ export const Marquee = () => {
         "
       >
         <div className="inline-block space-x-16 lg:space-x-24">
+          <span className="circles">Acoustics</span>
+          <span className="circles">Audio & Visuals</span>
+          <span className="circles">Interior</span>
+          <span className="circles">Management</span>
+          <span className="circles">Acoustics</span>
+          <span className="circles">Audio & Visuals</span>
+          <span className="circles">Interior</span>
+          <span className="circles">Management</span>
+          <span className="circles">Acoustics</span>
+          <span className="circles">Audio & Visuals</span>
+          <span className="circles">Interior</span>
+          <span className="circles">Management</span>
           <span className="circles">Acoustics</span>
           <span className="circles">Audio & Visuals</span>
           <span className="circles">Interior</span>

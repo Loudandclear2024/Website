@@ -63,7 +63,11 @@ export const SubFooter = () => {
                 <MdOutlineEmail className="text-secondary text-2xl" />
                 <h3 className=" text-secondary text-lg">Email Address</h3>
               </div>
-              <p className="text-light-gray ">info.loudandclear@gmail.com</p>
+              <p className="text-light-gray">
+                <a href="mailto:Karan.loudandclear@gmail.com" target="_blank">
+                  Karan.loudandclear@gmail.com
+                </a>
+              </p>
             </div>
             <div className="mt-4 px-4">
               <div className="flex items-center gap-3 ">
@@ -105,7 +109,7 @@ export const SubFooter = () => {
                 <li className="cursor-pointer">Home</li>
               </Link>
               <Link href="/#how-we-work">
-                <li className="cursor-pointer">How It Works</li>
+                <li className="cursor-pointer">How we work</li>
               </Link>
               <Link href="/#services">
                 <li className="cursor-pointer">Services</li>

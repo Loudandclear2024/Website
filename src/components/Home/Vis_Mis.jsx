@@ -69,7 +69,7 @@ export default function Vis_Mis() {
             and precision, we aim to transform how audio-visual systems are
             perceived and enjoyed. With our expertise and dedication, we strive
             to create immersive environments that captivate the senses and
-            exceed expectations. Join us as we lead the charge towards a world
+            exceed expectations. Join us as we lead the change towards a world
             where excellence in AV design and calibration is the norm, not the
             exception.
           </p>

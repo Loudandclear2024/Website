@@ -5,13 +5,7 @@ import { Parallax } from "./Parallax"
 import { RxCross2 } from "react-icons/rx"
 import { useEffect, useState } from "react"
 
-export const Grid = ({
-  modalIsOpen,
-  setIsOpen,
-  openModal,
-  closeModal,
-  modalContent,
-}) => {
+export const Grid = () => {
   // We will be creating a parallax effect with the images
   // The images will move at different speeds
 
