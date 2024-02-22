@@ -8,11 +8,6 @@ export default function Brands() {
       name: "Adani",
     },
     {
-      src: "/images/home/clients/agdc.webp",
-      alt: "AGDC",
-      name: "AGDC",
-    },
-    {
       src: "/images/home/clients/gca.webp",
       alt: "GCA",
       name: "GCA",
