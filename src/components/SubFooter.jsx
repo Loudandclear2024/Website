@@ -114,12 +114,11 @@ export const SubFooter = () => {
               <Link href="/#services">
                 <li className="cursor-pointer">Services</li>
               </Link>
-              <Link href="/#faqs">
+              {/* <Link href="/#faqs">
                 <li className="cursor-pointer">FAQS</li>
-              </Link>
+              </Link> */}
             </ul>
           </div>
-
           {/* Company */}
           <div className="space-y-1 sm:space-y-6">
             <h3 className="text-white font-medium text-lg">Company</h3>

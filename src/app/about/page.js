@@ -98,10 +98,10 @@ export default function About() {
 
           <Image
             src="/images/about/about.jpeg"
-            width={500}
-            height={500}
+            width={1280}
+            height={900}
             alt="team"
-            className="rounded-lg mt-5 md:w-1/2 md:mt-0 lg:w-[45%] mlg:mr-8 mlg:w-[40%] xl:w-[35%]"
+            className="rounded-lg mt-5 w-full h-full object-cover md:w-1/2 md:mt-0 lg:w-[40%] mlg:mr-8 mlg:w-[40%] xl:w-[35%]"
           />
         </div>
 
