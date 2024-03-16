@@ -46,6 +46,12 @@ export default function About() {
       linkedin: "https://www.linkedin.com/in/ganesh-parmar-26673a2b0/",
     },
     {
+      name: "Moksha Dave",
+      position: "Digital Marketing Executive",
+      image: "/images/about/team/moksha.webp",
+      linkedin: "https://www.linkedin.com/in/moksha-dave/",
+    },
+    {
       name: "Deepak Goswami",
       position: "Office Assistant",
       image: "/images/about/team/deepak.webp",
@@ -131,15 +137,7 @@ export default function About() {
           {/* All Images */}
           <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:mt-5 lg:mt-8 lg:grid-cols-3">
             {team.map((member, index) => (
-              <div
-                className={`relative group
-              ${
-                index === 6 &&
-                "lg:col-start-2 sm:col-span-2 sm:justify-self-center lg:col-span-1 lg:justify-self-auto"
-              }
-              `}
-                key={index}
-              >
+              <div className="relative group" key={index}>
                 <Image
                   src={member.image}
                   width={500}
